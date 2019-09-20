@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/tabs/index/index",
+    "pages/tabs/index1/index1",
+    "pages/tabs/index2/index2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#333333",
+    "selectedColor": "#EF4511",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/tabs/index/index",
+        "text": "index",
+        "iconPath": "assets/imgs/tabs/home.png",
+        "selectedIconPath": "assets/imgs/tabs/homeact.png"
+      },
+      {
+        "pagePath": "pages/tabs/index1/index1",
+        "text": "index1",
+        "iconPath": "assets/imgs/tabs/category.png",
+        "selectedIconPath": "assets/imgs/tabs/categoryact.png"
+      },
+      {
+        "pagePath": "pages/tabs/index2/index2",
+        "text": "index2",
+        "iconPath": "assets/imgs/tabs/surprise.png",
+        "selectedIconPath": "assets/imgs/tabs/surpriseact.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

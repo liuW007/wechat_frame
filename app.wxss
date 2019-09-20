@@ -1,0 +1,12 @@
+/**app.wxss**/
+/* 所有页面的背景 */
+.page{
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: #F3F3F1;
+}
+/* 所有的页面padding */
+.page_padding{
+  padding: 0 30rpx 96rpx;
+}

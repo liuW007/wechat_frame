@@ -21,6 +21,10 @@
     <view class="auth_top" wx:if="{{hasAuth}}">
       <view>通过构造函数得出的结果</view>
     </view>
+    <!-- 密码加密 -->
+    <view class="auth_top">
+      <view>密码加密：{{pwd}} -- {{pwd_md5}}</view>
+    </view>
   </view>
 </view>
 <liuw_pickdate date_modal="{{date_modal}}" sure_color="pink" bindchangedate="changedate">

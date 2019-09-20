@@ -1,6 +1,7 @@
 // pages/tabs/index/index.js
 const app = getApp();
 const auth = require('../../../assets/plugins/utils/index.js').auth;
+const md5 = require('../../../assets/plugins/utils/index.js').md5;
 Page({
 
   /**
@@ -17,6 +18,8 @@ Page({
     date_modal: false,  // 日期弹框
     current_date: '',  // 返回的日期
     hasAuth: false, // 是否有权限
+    pwd: '111', // 未加密密码
+    pwd_md5: '', // 加密密码
   },
 
   /**
@@ -24,7 +27,8 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      hasAuth: auth('obj').hasAuth()
+      hasAuth: auth('obj').hasAuth(),
+      pwd_md5: md5.hex_md5(this.data.pwd)
     })
   },
 

@@ -1,0 +1,2 @@
+/* components/richtext/index.wxss */
+@import "/assets/plugins/wxParse/wxParse.wxss";

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "liuw_swiper": "../../../component/liuw_swiper/index",
+    "liuw_richtext": "../../../component/liuw_richtext/index",
+    "liuw_pickdate": "../../../component/liuw_pickdate/index"
+  }
+}

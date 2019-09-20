@@ -1,0 +1,18 @@
+<!--components/liuw_swiper/index.wxml-->
+<!--
+imgsUrls: 传入图片数组；
+show_index: 是否显示数字标识 - false;
+autoplay: 自动播放 - true;
+interval: 播放间隔时长 - 2000;
+circular: 是否采用衔接滑动 - true;
+-->
+<view class='liuw_swiper'>
+  <swiper autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" bindchange="changeCurrent" class="liuw_swiper_image">
+    <block wx:for="{{imgsUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image class="liuw_swiper_image" src="{{item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="liuw_swiper_index" hidden="{{!show_index}}">{{current_index}}/{{imgsUrls.length}}</view>
+</view>

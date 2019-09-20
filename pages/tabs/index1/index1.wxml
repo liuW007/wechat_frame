@@ -1,0 +1,4 @@
+<!--pages/tabs/index1/index1.wxml-->
+<view class="page">
+  <view class="page_padding">dd</view>
+</view>

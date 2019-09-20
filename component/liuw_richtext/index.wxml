@@ -1,0 +1,8 @@
+<!--components/richtext/index.wxml-->
+  <!-- 
+  可传入一下两个变量：
+  rich_content： 显示的富文本内容
+  host： 域名
+  -->
+<import src="/assets/plugins/wxParse/wxParse.wxml" />
+<template is="wxParse" data="{{wxParseData:article.nodes}}" />

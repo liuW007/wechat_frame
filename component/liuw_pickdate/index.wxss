@@ -1,0 +1,32 @@
+/* components/liuw_pickdate/index.wxss */
+/* 日期选择器弹框布局 */
+.date_position{
+  position: fixed;
+  bottom: 96rpx;
+  background: #fff;
+  width: 100%;
+  min-height: 445rpx;
+  z-index: 999;
+}
+/* 取消、确定按钮布局 */
+.date_btn_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 60rpx;
+  /* background: pink; */
+}
+.date_btn{
+  font-size: 32rpx;
+}
+/* 时间选择器 */
+.datascroll{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+.data-scroll-box{
+  font-size: 46rpx;
+  font-weight: bold;
+  height: 60rpx;
+}

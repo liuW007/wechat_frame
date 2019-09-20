@@ -1,0 +1,14 @@
+/* pages/tabs/index/index.wxss */
+.index_top{
+  padding-top: 30rpx;
+}
+.richtext_top{
+  margin-top: 20rpx;
+  padding: 30rpx;
+  background: orange;
+}
+.pickdate_top{
+  margin-top: 20rpx;
+  padding: 30rpx;
+  background: pink;
+}

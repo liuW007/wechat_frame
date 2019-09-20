@@ -1,0 +1,27 @@
+<!--components/liuw_pickdate/index.wxml-->
+<!--
+date_modal: Bool，弹框的显示与否
+cancel_color: String，取消按钮的颜色
+sure_color: String，确定按钮的颜色
+外放的事件：
+changedate: 返回值是选择的日期
+-->
+<view hidden="{{!date_modal}}" class="date_position">
+  <view class="date_btn_box">
+    <view class="date_btn date_cancel" style="color:{{cancel_color}}" bindtap="bindCancel">取消</view>
+    <view class="date_btn date_sure" style="color:{{sure_color}}" bindtap="bindSure">确定</view>
+  </view>
+  <slot name="header"></slot>
+  <picker-view class="datascroll" style="width:100%;height:150px;" indicator-class="data-scroll-box" value="{{begindate.pick_value}}" bindchange="bindChangeBegin" bindpickstart="bindPickstart" bindpickend="bindPickend">
+    <picker-view-column>
+      <view wx:for="{{years}}" wx:key="{{index}}">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" wx:key="{{index}}">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{days}}" wx:key="{{index}}">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <slot name="footer"></slot>
+</view>

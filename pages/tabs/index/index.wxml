@@ -1,0 +1,29 @@
+<!--pages/tabs/index/index.wxml-->
+<view class="page">
+  <view class="page_padding index_top">
+    <!-- 图片轮播 -->
+    <liuw_swiper imgsUrls="{{swiper_imgs}}" show_index="{{true}}" autoplay="{{false}}"></liuw_swiper>
+    <!-- 富文本内容的展示 -->
+    <view class="richtext_top">
+      <liuw_richtext rich_content="{{rich_content}}"></liuw_richtext>
+    </view>
+    <!-- 点击增加tab上的数字 -->
+    <view>
+      <button size="mini" bindtap="bindSubTabnum">减少</button>
+      <button size="mini" bindtap="bindAddTabnum">增加</button>
+    </view>
+    <!-- 日期选择器的展示 -->
+    <view class="pickdate_top">
+      <button size="mini" bindtap="bindChoiceDate">选择日期</button>
+      <view>选择的日期：{{current_date}}</view>
+    </view>
+    <!-- 是否有权限显示此信息 -->
+    <view class="auth_top" wx:if="{{hasAuth}}">
+      <view>通过构造函数得出的结果</view>
+    </view>
+  </view>
+</view>
+<liuw_pickdate date_modal="{{date_modal}}" sure_color="pink" bindchangedate="changedate">
+  <view slot="header">header</view>
+  <view slot="footer">footer</view>
+</liuw_pickdate>
